@@ -9,7 +9,7 @@
 import Foundation
 
 extension Friend {
-    static func with(id: Int = 0, firstname: String = "Jimmy", lastname: String = "Swift", phonenumber: String = "123123123123123123") -> Friend{
+    static func with(id: Int = 0, firstname: String = "Jimmy", lastname: String = "Swift", phonenumber: String = "1234567890") -> Friend{
         return Friend(firstName: firstname, lastName: lastname, phoneNumber: phonenumber, id: id)
     }
 }

@@ -52,7 +52,7 @@ class UpdateFriendViewModelTests: XCTestCase {
         let viewModel = UpdateFriendViewModel(friend: mockFriend, appServerClient: appServerClient)
 
         let expectUpdateSubmitButtonStateCall = expectation(description: "updateSubmitButtonState is called")
-
+        
         viewModel.updateSubmitButtonState = { state in
             XCTAssert(state == true, "testValidateInputData failed. Data should be valid")
             expectUpdateSubmitButtonStateCall.fulfill()
@@ -65,7 +65,9 @@ class UpdateFriendViewModelTests: XCTestCase {
         waitForExpectations(timeout: 0.1, handler: nil)
     }
 
+    
 }
+
 
 private final class MockAppServerClient: AppServerClient {
     var patchFriendResult: AppServerClient.PatchFriendResult?

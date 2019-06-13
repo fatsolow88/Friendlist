@@ -10,9 +10,11 @@ import Foundation
 
 final class UpdateFriendViewModel: FriendViewModel {
     var friend: Friend
+    
     var title: String {
         return "Update Friend"
     }
+    
     var firstName: String? {
         didSet {
             validateInput()
@@ -86,17 +88,18 @@ final class UpdateFriendViewModel: FriendViewModel {
     
     func validateInput() {
         let validData = [firstName, lastName, phoneNumber].filter {
-            ($0?.count ?? 0) > 1 }
-        validInputData = (validData.count == 0) ? true : false }
+            ($0?.count ?? 0) < 1 }
+        validInputData = (validData.count == 0) ? true : false
     }
+}
 
-    fileprivate extension AppServerClient.PatchFriendFailureReason {
-        func getErrorMessage() -> String? {
-            switch self {
-            case .unAuthorized:
-                return "Please login to update friends friends."
-            case .notFound:
-                return "Failed to update friend. Please try again."
+fileprivate extension AppServerClient.PatchFriendFailureReason {
+    func getErrorMessage() -> String? {
+        switch self {
+        case .unAuthorized:
+            return "Please login to update friends friends."
+        case .notFound:
+            return "Failed to update friend. Please try again."
         }
     }
 }
