@@ -1,0 +1,852 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		895D86E43F6E0CC0A4A029C5 /* Pods_Friendlist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A88B9C8D579528CF628A988 /* Pods_Friendlist.framework */; };
+		BF86CE3E74F25526C83FB667 /* Pods_FriendlistTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0492B1CC94C304F22CCD2248 /* Pods_FriendlistTests.framework */; };
+		F51E1C1D22B09FD0007B44D0 /* UpdateFriendViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51E1C1B22B09FD0007B44D0 /* UpdateFriendViewModelTests.swift */; };
+		F51E1C1E22B09FD0007B44D0 /* AddFriendViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51E1C1C22B09FD0007B44D0 /* AddFriendViewModelTests.swift */; };
+		F51E1C2222B0A054007B44D0 /* BindableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51E1C2022B0A054007B44D0 /* BindableTests.swift */; };
+		F51E1C2322B0A054007B44D0 /* AlertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51E1C2122B0A054007B44D0 /* AlertTests.swift */; };
+		F591FF0922AFB296008FD354 /* MockFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = F591FF0722AFB257008FD354 /* MockFriend.swift */; };
+		F591FF0E22B0928B008FD354 /* FriendsTableViewViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F591FF0D22B0928B008FD354 /* FriendsTableViewViewModelTests.swift */; };
+		F5DC36DB22AE3D9500008E2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC36DA22AE3D9500008E2F /* AppDelegate.swift */; };
+		F5DC36DD22AE3D9500008E2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC36DC22AE3D9500008E2F /* ViewController.swift */; };
+		F5DC36E022AE3D9500008E2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5DC36DE22AE3D9500008E2F /* Main.storyboard */; };
+		F5DC36E222AE3D9A00008E2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5DC36E122AE3D9A00008E2F /* Assets.xcassets */; };
+		F5DC36E522AE3D9A00008E2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5DC36E322AE3D9A00008E2F /* LaunchScreen.storyboard */; };
+		F5DC36F022AE3D9A00008E2F /* FriendlistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC36EF22AE3D9A00008E2F /* FriendlistTests.swift */; };
+		F5DC36FB22AE3D9A00008E2F /* FriendlistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC36FA22AE3D9A00008E2F /* FriendlistUITests.swift */; };
+		F5DC370922AE429A00008E2F /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC370822AE429A00008E2F /* Friend.swift */; };
+		F5DC371322AE475800008E2F /* AppServerClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC371222AE475800008E2F /* AppServerClient.swift */; };
+		F5DC371522AE485B00008E2F /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC371422AE485B00008E2F /* Result.swift */; };
+		F5DC371722AE5BC400008E2F /* FriendsTableViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC371622AE5BC400008E2F /* FriendsTableViewViewModel.swift */; };
+		F5DC371922AE628700008E2F /* FriendCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC371822AE628700008E2F /* FriendCellViewModel.swift */; };
+		F5DC371B22AE62AC00008E2F /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC371A22AE62AC00008E2F /* Bindable.swift */; };
+		F5DC371D22AF604600008E2F /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC371C22AF604600008E2F /* FriendsTableViewController.swift */; };
+		F5DC371F22AF60C900008E2F /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC371E22AF60C900008E2F /* FriendTableViewCell.swift */; };
+		F5DC372122AF83FF00008E2F /* FriendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC372022AF83FF00008E2F /* FriendViewModel.swift */; };
+		F5DC372322AF84E000008E2F /* AddFriendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC372222AF84DF00008E2F /* AddFriendViewModel.swift */; };
+		F5DC372522AF863400008E2F /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC372422AF863400008E2F /* Alert.swift */; };
+		F5DC372722AF891000008E2F /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC372622AF891000008E2F /* FriendViewController.swift */; };
+		F5DC372922AF8B6900008E2F /* UpdateFriendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC372822AF8B6900008E2F /* UpdateFriendViewModel.swift */; };
+		F5DC372B22AFA13400008E2F /* Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC372A22AFA13400008E2F /* Json.swift */; };
+		F5DC373B22AFB0BA00008E2F /* FriendTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC373922AFB0BA00008E2F /* FriendTest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5DC36EC22AE3D9A00008E2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5DC36CF22AE3D9500008E2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5DC36D622AE3D9500008E2F;
+			remoteInfo = Friendlist;
+		};
+		F5DC36F722AE3D9A00008E2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5DC36CF22AE3D9500008E2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5DC36D622AE3D9500008E2F;
+			remoteInfo = Friendlist;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0492B1CC94C304F22CCD2248 /* Pods_FriendlistTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FriendlistTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		235EA4CBDAEAF7B3DF50B03A /* Pods-Friendlist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Friendlist.debug.xcconfig"; path = "Target Support Files/Pods-Friendlist/Pods-Friendlist.debug.xcconfig"; sourceTree = "<group>"; };
+		6A88B9C8D579528CF628A988 /* Pods_Friendlist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Friendlist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D8A2213A3DC69433B24193F /* Pods-FriendlistTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendlistTests.release.xcconfig"; path = "Target Support Files/Pods-FriendlistTests/Pods-FriendlistTests.release.xcconfig"; sourceTree = "<group>"; };
+		9C35AEB4740911B8BD21A3A5 /* Pods-FriendlistTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendlistTests.debug.xcconfig"; path = "Target Support Files/Pods-FriendlistTests/Pods-FriendlistTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9DF4B5847595F253566796AC /* Pods-Friendlist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Friendlist.release.xcconfig"; path = "Target Support Files/Pods-Friendlist/Pods-Friendlist.release.xcconfig"; sourceTree = "<group>"; };
+		F51E1C1B22B09FD0007B44D0 /* UpdateFriendViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateFriendViewModelTests.swift; sourceTree = "<group>"; };
+		F51E1C1C22B09FD0007B44D0 /* AddFriendViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFriendViewModelTests.swift; sourceTree = "<group>"; };
+		F51E1C2022B0A054007B44D0 /* BindableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindableTests.swift; sourceTree = "<group>"; };
+		F51E1C2122B0A054007B44D0 /* AlertTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertTests.swift; sourceTree = "<group>"; };
+		F591FF0722AFB257008FD354 /* MockFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFriend.swift; sourceTree = "<group>"; };
+		F591FF0D22B0928B008FD354 /* FriendsTableViewViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewViewModelTests.swift; sourceTree = "<group>"; };
+		F5DC36D722AE3D9500008E2F /* Friendlist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Friendlist.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5DC36DA22AE3D9500008E2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5DC36DC22AE3D9500008E2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F5DC36DF22AE3D9500008E2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5DC36E122AE3D9A00008E2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5DC36E422AE3D9A00008E2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5DC36E622AE3D9A00008E2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5DC36EB22AE3D9A00008E2F /* FriendlistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FriendlistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5DC36EF22AE3D9A00008E2F /* FriendlistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendlistTests.swift; sourceTree = "<group>"; };
+		F5DC36F122AE3D9A00008E2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5DC36F622AE3D9A00008E2F /* FriendlistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FriendlistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5DC36FA22AE3D9A00008E2F /* FriendlistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendlistUITests.swift; sourceTree = "<group>"; };
+		F5DC36FC22AE3D9A00008E2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5DC370822AE429A00008E2F /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		F5DC371222AE475800008E2F /* AppServerClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppServerClient.swift; sourceTree = "<group>"; };
+		F5DC371422AE485B00008E2F /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		F5DC371622AE5BC400008E2F /* FriendsTableViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewViewModel.swift; sourceTree = "<group>"; };
+		F5DC371822AE628700008E2F /* FriendCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCellViewModel.swift; sourceTree = "<group>"; };
+		F5DC371A22AE62AC00008E2F /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		F5DC371C22AF604600008E2F /* FriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
+		F5DC371E22AF60C900008E2F /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		F5DC372022AF83FF00008E2F /* FriendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewModel.swift; sourceTree = "<group>"; };
+		F5DC372222AF84DF00008E2F /* AddFriendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendViewModel.swift; sourceTree = "<group>"; };
+		F5DC372422AF863400008E2F /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		F5DC372622AF891000008E2F /* FriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
+		F5DC372822AF8B6900008E2F /* UpdateFriendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateFriendViewModel.swift; sourceTree = "<group>"; };
+		F5DC372A22AFA13400008E2F /* Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Json.swift; sourceTree = "<group>"; };
+		F5DC373922AFB0BA00008E2F /* FriendTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5DC36D422AE3D9500008E2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				895D86E43F6E0CC0A4A029C5 /* Pods_Friendlist.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5DC36E822AE3D9A00008E2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF86CE3E74F25526C83FB667 /* Pods_FriendlistTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5DC36F322AE3D9A00008E2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1156EB526D6FB6FE14B71882 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A88B9C8D579528CF628A988 /* Pods_Friendlist.framework */,
+				0492B1CC94C304F22CCD2248 /* Pods_FriendlistTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D14E594D5007920C8CAE7DB9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				235EA4CBDAEAF7B3DF50B03A /* Pods-Friendlist.debug.xcconfig */,
+				9DF4B5847595F253566796AC /* Pods-Friendlist.release.xcconfig */,
+				9C35AEB4740911B8BD21A3A5 /* Pods-FriendlistTests.debug.xcconfig */,
+				8D8A2213A3DC69433B24193F /* Pods-FriendlistTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F51E1C1F22B09FE8007B44D0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F51E1C2122B0A054007B44D0 /* AlertTests.swift */,
+				F51E1C2022B0A054007B44D0 /* BindableTests.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F51E1C2422B0A076007B44D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5DC373922AFB0BA00008E2F /* FriendTest.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F591FF0622AFB235008FD354 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				F591FF0722AFB257008FD354 /* MockFriend.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		F591FF0F22B09ACE008FD354 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F51E1C1C22B09FD0007B44D0 /* AddFriendViewModelTests.swift */,
+				F51E1C1B22B09FD0007B44D0 /* UpdateFriendViewModelTests.swift */,
+				F591FF0D22B0928B008FD354 /* FriendsTableViewViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F5DC36CE22AE3D9500008E2F = {
+			isa = PBXGroup;
+			children = (
+				F5DC36D922AE3D9500008E2F /* Friendlist */,
+				F5DC36EE22AE3D9A00008E2F /* FriendlistTests */,
+				F5DC36F922AE3D9A00008E2F /* FriendlistUITests */,
+				F5DC36D822AE3D9500008E2F /* Products */,
+				D14E594D5007920C8CAE7DB9 /* Pods */,
+				1156EB526D6FB6FE14B71882 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F5DC36D822AE3D9500008E2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5DC36D722AE3D9500008E2F /* Friendlist.app */,
+				F5DC36EB22AE3D9A00008E2F /* FriendlistTests.xctest */,
+				F5DC36F622AE3D9A00008E2F /* FriendlistUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5DC36D922AE3D9500008E2F /* Friendlist */ = {
+			isa = PBXGroup;
+			children = (
+				F5DC370A22AE463C00008E2F /* Helpers */,
+				F5DC370D22AE468000008E2F /* Model */,
+				F5DC370E22AE468700008E2F /* Service */,
+				F5DC370F22AE468D00008E2F /* View */,
+				F5DC371022AE469000008E2F /* ViewController */,
+				F5DC371122AE469B00008E2F /* ViewModel */,
+				F5DC36DA22AE3D9500008E2F /* AppDelegate.swift */,
+				F5DC36DC22AE3D9500008E2F /* ViewController.swift */,
+				F5DC36DE22AE3D9500008E2F /* Main.storyboard */,
+				F5DC36E122AE3D9A00008E2F /* Assets.xcassets */,
+				F5DC36E322AE3D9A00008E2F /* LaunchScreen.storyboard */,
+				F5DC36E622AE3D9A00008E2F /* Info.plist */,
+			);
+			path = Friendlist;
+			sourceTree = "<group>";
+		};
+		F5DC36EE22AE3D9A00008E2F /* FriendlistTests */ = {
+			isa = PBXGroup;
+			children = (
+				F51E1C2422B0A076007B44D0 /* Model */,
+				F51E1C1F22B09FE8007B44D0 /* Helpers */,
+				F591FF0F22B09ACE008FD354 /* ViewModel */,
+				F591FF0622AFB235008FD354 /* Mock */,
+				F5DC36EF22AE3D9A00008E2F /* FriendlistTests.swift */,
+				F5DC36F122AE3D9A00008E2F /* Info.plist */,
+			);
+			path = FriendlistTests;
+			sourceTree = "<group>";
+		};
+		F5DC36F922AE3D9A00008E2F /* FriendlistUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F5DC36FA22AE3D9A00008E2F /* FriendlistUITests.swift */,
+				F5DC36FC22AE3D9A00008E2F /* Info.plist */,
+			);
+			path = FriendlistUITests;
+			sourceTree = "<group>";
+		};
+		F5DC370A22AE463C00008E2F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F5DC371422AE485B00008E2F /* Result.swift */,
+				F5DC371A22AE62AC00008E2F /* Bindable.swift */,
+				F5DC372422AF863400008E2F /* Alert.swift */,
+				F5DC372A22AFA13400008E2F /* Json.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F5DC370D22AE468000008E2F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5DC370822AE429A00008E2F /* Friend.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F5DC370E22AE468700008E2F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F5DC371222AE475800008E2F /* AppServerClient.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F5DC370F22AE468D00008E2F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5DC371E22AF60C900008E2F /* FriendTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5DC371022AE469000008E2F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F5DC371C22AF604600008E2F /* FriendsTableViewController.swift */,
+				F5DC372622AF891000008E2F /* FriendViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F5DC371122AE469B00008E2F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F5DC372022AF83FF00008E2F /* FriendViewModel.swift */,
+				F5DC372822AF8B6900008E2F /* UpdateFriendViewModel.swift */,
+				F5DC372222AF84DF00008E2F /* AddFriendViewModel.swift */,
+				F5DC371622AE5BC400008E2F /* FriendsTableViewViewModel.swift */,
+				F5DC371822AE628700008E2F /* FriendCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5DC36D622AE3D9500008E2F /* Friendlist */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5DC36FF22AE3D9A00008E2F /* Build configuration list for PBXNativeTarget "Friendlist" */;
+			buildPhases = (
+				429D58F3B78E641463A8C180 /* [CP] Check Pods Manifest.lock */,
+				F5DC36D322AE3D9500008E2F /* Sources */,
+				F5DC36D422AE3D9500008E2F /* Frameworks */,
+				F5DC36D522AE3D9500008E2F /* Resources */,
+				5B8DE847D473DA024C036016 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Friendlist;
+			productName = Friendlist;
+			productReference = F5DC36D722AE3D9500008E2F /* Friendlist.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5DC36EA22AE3D9A00008E2F /* FriendlistTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5DC370222AE3D9A00008E2F /* Build configuration list for PBXNativeTarget "FriendlistTests" */;
+			buildPhases = (
+				9B49C332D338D7CAC155E300 /* [CP] Check Pods Manifest.lock */,
+				F5DC36E722AE3D9A00008E2F /* Sources */,
+				F5DC36E822AE3D9A00008E2F /* Frameworks */,
+				F5DC36E922AE3D9A00008E2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5DC36ED22AE3D9A00008E2F /* PBXTargetDependency */,
+			);
+			name = FriendlistTests;
+			productName = FriendlistTests;
+			productReference = F5DC36EB22AE3D9A00008E2F /* FriendlistTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F5DC36F522AE3D9A00008E2F /* FriendlistUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5DC370522AE3D9A00008E2F /* Build configuration list for PBXNativeTarget "FriendlistUITests" */;
+			buildPhases = (
+				F5DC36F222AE3D9A00008E2F /* Sources */,
+				F5DC36F322AE3D9A00008E2F /* Frameworks */,
+				F5DC36F422AE3D9A00008E2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5DC36F822AE3D9A00008E2F /* PBXTargetDependency */,
+			);
+			name = FriendlistUITests;
+			productName = FriendlistUITests;
+			productReference = F5DC36F622AE3D9A00008E2F /* FriendlistUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5DC36CF22AE3D9500008E2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Low Wai Hong";
+				TargetAttributes = {
+					F5DC36D622AE3D9500008E2F = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					F5DC36EA22AE3D9A00008E2F = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = F5DC36D622AE3D9500008E2F;
+					};
+					F5DC36F522AE3D9A00008E2F = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = F5DC36D622AE3D9500008E2F;
+					};
+				};
+			};
+			buildConfigurationList = F5DC36D222AE3D9500008E2F /* Build configuration list for PBXProject "Friendlist" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5DC36CE22AE3D9500008E2F;
+			productRefGroup = F5DC36D822AE3D9500008E2F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5DC36D622AE3D9500008E2F /* Friendlist */,
+				F5DC36EA22AE3D9A00008E2F /* FriendlistTests */,
+				F5DC36F522AE3D9A00008E2F /* FriendlistUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5DC36D522AE3D9500008E2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5DC36E522AE3D9A00008E2F /* LaunchScreen.storyboard in Resources */,
+				F5DC36E222AE3D9A00008E2F /* Assets.xcassets in Resources */,
+				F5DC36E022AE3D9500008E2F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5DC36E922AE3D9A00008E2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5DC36F422AE3D9A00008E2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		429D58F3B78E641463A8C180 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Friendlist-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B8DE847D473DA024C036016 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Friendlist/Pods-Friendlist-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Friendlist/Pods-Friendlist-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Friendlist/Pods-Friendlist-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B49C332D338D7CAC155E300 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FriendlistTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5DC36D322AE3D9500008E2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5DC371922AE628700008E2F /* FriendCellViewModel.swift in Sources */,
+				F5DC371522AE485B00008E2F /* Result.swift in Sources */,
+				F5DC370922AE429A00008E2F /* Friend.swift in Sources */,
+				F5DC371322AE475800008E2F /* AppServerClient.swift in Sources */,
+				F5DC371F22AF60C900008E2F /* FriendTableViewCell.swift in Sources */,
+				F591FF0922AFB296008FD354 /* MockFriend.swift in Sources */,
+				F5DC371D22AF604600008E2F /* FriendsTableViewController.swift in Sources */,
+				F5DC372522AF863400008E2F /* Alert.swift in Sources */,
+				F5DC371722AE5BC400008E2F /* FriendsTableViewViewModel.swift in Sources */,
+				F5DC36DD22AE3D9500008E2F /* ViewController.swift in Sources */,
+				F5DC372722AF891000008E2F /* FriendViewController.swift in Sources */,
+				F5DC372122AF83FF00008E2F /* FriendViewModel.swift in Sources */,
+				F5DC36DB22AE3D9500008E2F /* AppDelegate.swift in Sources */,
+				F5DC372922AF8B6900008E2F /* UpdateFriendViewModel.swift in Sources */,
+				F5DC371B22AE62AC00008E2F /* Bindable.swift in Sources */,
+				F5DC372322AF84E000008E2F /* AddFriendViewModel.swift in Sources */,
+				F5DC372B22AFA13400008E2F /* Json.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5DC36E722AE3D9A00008E2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5DC36F022AE3D9A00008E2F /* FriendlistTests.swift in Sources */,
+				F51E1C2322B0A054007B44D0 /* AlertTests.swift in Sources */,
+				F5DC373B22AFB0BA00008E2F /* FriendTest.swift in Sources */,
+				F51E1C2222B0A054007B44D0 /* BindableTests.swift in Sources */,
+				F51E1C1D22B09FD0007B44D0 /* UpdateFriendViewModelTests.swift in Sources */,
+				F591FF0E22B0928B008FD354 /* FriendsTableViewViewModelTests.swift in Sources */,
+				F51E1C1E22B09FD0007B44D0 /* AddFriendViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5DC36F222AE3D9A00008E2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5DC36FB22AE3D9A00008E2F /* FriendlistUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5DC36ED22AE3D9A00008E2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5DC36D622AE3D9500008E2F /* Friendlist */;
+			targetProxy = F5DC36EC22AE3D9A00008E2F /* PBXContainerItemProxy */;
+		};
+		F5DC36F822AE3D9A00008E2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5DC36D622AE3D9500008E2F /* Friendlist */;
+			targetProxy = F5DC36F722AE3D9A00008E2F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F5DC36DE22AE3D9500008E2F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5DC36DF22AE3D9500008E2F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5DC36E322AE3D9A00008E2F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5DC36E422AE3D9A00008E2F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5DC36FD22AE3D9A00008E2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F5DC36FE22AE3D9A00008E2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5DC370022AE3D9A00008E2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 235EA4CBDAEAF7B3DF50B03A /* Pods-Friendlist.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Friendlist/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hayatelow.Friendlist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5DC370122AE3D9A00008E2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DF4B5847595F253566796AC /* Pods-Friendlist.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Friendlist/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hayatelow.Friendlist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F5DC370322AE3D9A00008E2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C35AEB4740911B8BD21A3A5 /* Pods-FriendlistTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FriendlistTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hayatelow.FriendlistTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Friendlist.app/Friendlist";
+			};
+			name = Debug;
+		};
+		F5DC370422AE3D9A00008E2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D8A2213A3DC69433B24193F /* Pods-FriendlistTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FriendlistTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hayatelow.FriendlistTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Friendlist.app/Friendlist";
+			};
+			name = Release;
+		};
+		F5DC370622AE3D9A00008E2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FriendlistUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hayatelow.FriendlistUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Friendlist;
+			};
+			name = Debug;
+		};
+		F5DC370722AE3D9A00008E2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FriendlistUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hayatelow.FriendlistUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Friendlist;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5DC36D222AE3D9500008E2F /* Build configuration list for PBXProject "Friendlist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5DC36FD22AE3D9A00008E2F /* Debug */,
+				F5DC36FE22AE3D9A00008E2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5DC36FF22AE3D9A00008E2F /* Build configuration list for PBXNativeTarget "Friendlist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5DC370022AE3D9A00008E2F /* Debug */,
+				F5DC370122AE3D9A00008E2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5DC370222AE3D9A00008E2F /* Build configuration list for PBXNativeTarget "FriendlistTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5DC370322AE3D9A00008E2F /* Debug */,
+				F5DC370422AE3D9A00008E2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5DC370522AE3D9A00008E2F /* Build configuration list for PBXNativeTarget "FriendlistUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5DC370622AE3D9A00008E2F /* Debug */,
+				F5DC370722AE3D9A00008E2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5DC36CF22AE3D9500008E2F /* Project object */;
+}
